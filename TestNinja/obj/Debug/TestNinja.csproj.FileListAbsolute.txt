@@ -11,3 +11,15 @@
 /Users/moshfeghhamedani/RiderProjects/TestNinja/TestNinja/bin/Debug/EntityFramework.xml
 /Users/moshfeghhamedani/RiderProjects/TestNinja/TestNinja/bin/Debug/EntityFramework.SqlServer.xml
 /Users/moshfeghhamedani/RiderProjects/TestNinja/TestNinja/bin/Debug/Newtonsoft.Json.xml
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\TestNinja.dll.config
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\TestNinja.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\TestNinja.pdb
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\EntityFramework.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\EntityFramework.xml
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.xml
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.xml
+D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.csprojResolveAssemblyReference.cache
+D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.pdb
