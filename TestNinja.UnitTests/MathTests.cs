@@ -19,6 +19,7 @@ namespace TestNinja.UnitTests {
         }
 
         [Test]
+        //[Ignore("for test purpose")]
         public void Add_WhenCalled_ReturnTheSumOfArguments() {
             var result = _math.Add(1, 2);
 
@@ -34,6 +35,15 @@ namespace TestNinja.UnitTests {
             var result = _math.Max(a, b);
 
             Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbersUpToLimit() {
+            var result = _math.GetOddNumbers(5);
+
+            //Assert.That(result, Is.Not.Empty);
+            //Assert.That(result.Count(), Is.EqualTo(3));
+            Assert.That(result, Is.EquivalentTo(new [] {1, 3, 5})); // order doesn't matter
         }
     }
 }
