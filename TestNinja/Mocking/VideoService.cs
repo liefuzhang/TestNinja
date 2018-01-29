@@ -7,11 +7,16 @@ using Newtonsoft.Json;
 
 namespace TestNinja.Mocking
 {
-    public class VideoService
-    {
+    public class VideoService {
+        private IFileReader _fileReader;
+
+        public VideoService(IFileReader fileReader = null) {
+            _fileReader = fileReader ?? new FileReader();
+        }
+
         public string ReadVideoTitle()
         {
-            var str = File.ReadAllText("video.txt");
+            var str = _fileReader.Read("video.txt");
             var video = JsonConvert.DeserializeObject<Video>(str);
             if (video == null)
                 return "Error parsing the video.";
@@ -26,7 +31,7 @@ namespace TestNinja.Mocking
             {
                 var videos = 
                     (from video in context.Videos
-                    where !video.IsProcessed
+                     where !video.IsProcessed
                     select video).ToList();
                 
                 foreach (var v in videos)
