@@ -23,3 +23,8 @@ D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.xml
 D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.csprojResolveAssemblyReference.cache
 D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.dll
 D:\Program Files\Git repo\TestNinja\TestNinja\obj\Debug\TestNinja.pdb
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Castle.Core.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Castle.Core.xml
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.ValueTuple.dll
+D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.xml
