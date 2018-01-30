@@ -29,7 +29,7 @@ namespace TestNinja.UnitTests.Mocking {
 
         [Test]
         public void DownloadInstaller_DownloadFileThrowWebException_ReturnFalse() {
-            _downloader.Setup(w => w.DownloadFileToDestination("customer", "installer", null)).Throws<WebException>();
+            _downloader.Setup(w => w.DownloadFileToDestination("customer", null)).Throws<WebException>();
 
             var result = _installerHelper.DownloadInstaller("customer", "installer");
 

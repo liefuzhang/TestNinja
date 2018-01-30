@@ -10,7 +10,9 @@ namespace TestNinja.Mocking {
         }
         public bool DownloadInstaller(string customerName, string installerName) {
             try {
-                _downloader.DownloadFileToDestination(customerName, installerName, _setupDestinationFile);
+                _downloader.DownloadFileToDestination(
+                    $"http://example.com/{customerName}/{installerName}",
+                    _setupDestinationFile);
 
                 return true;
             } catch (WebException) {

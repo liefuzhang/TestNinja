@@ -2,17 +2,13 @@
 
 namespace TestNinja.Mocking {
     public interface IFileDownloader {
-        void DownloadFileToDestination(string customerName, string installerName, string destinationFile);
+        void DownloadFileToDestination(string url, string path);
     }
 
     public class FileDownloader : IFileDownloader {
-        public void DownloadFileToDestination(string customerName, string installerName, string destinationFile) {
+        public void DownloadFileToDestination(string url, string path) {
             var client = new WebClient();
-            client.DownloadFile(
-                string.Format("http://example.com/{0}/{1}",
-                    customerName,
-                    installerName),
-                destinationFile);
+            client.DownloadFile(url, path);
         }
     }
 }
