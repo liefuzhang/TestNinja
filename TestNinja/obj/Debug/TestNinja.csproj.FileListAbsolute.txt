@@ -28,3 +28,20 @@ D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\Castle.Core.xml
 D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.ValueTuple.dll
 D:\Program Files\Git repo\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Temp\TestNinja\TestNinja\obj\Debug\TestNinja.csprojResolveAssemblyReference.cache
+C:\Temp\TestNinja\TestNinja\obj\Debug\TestNinja.dll
+C:\Temp\TestNinja\TestNinja\obj\Debug\TestNinja.pdb
+C:\Temp\TestNinja\TestNinja\bin\Debug\TestNinja.dll.config
+C:\Temp\TestNinja\TestNinja\bin\Debug\TestNinja.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\TestNinja.pdb
+C:\Temp\TestNinja\TestNinja\bin\Debug\Castle.Core.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\EntityFramework.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\System.ValueTuple.dll
+C:\Temp\TestNinja\TestNinja\bin\Debug\Castle.Core.xml
+C:\Temp\TestNinja\TestNinja\bin\Debug\EntityFramework.xml
+C:\Temp\TestNinja\TestNinja\bin\Debug\EntityFramework.SqlServer.xml
+C:\Temp\TestNinja\TestNinja\bin\Debug\Newtonsoft.Json.xml
+C:\Temp\TestNinja\TestNinja\bin\Debug\System.Threading.Tasks.Extensions.xml
