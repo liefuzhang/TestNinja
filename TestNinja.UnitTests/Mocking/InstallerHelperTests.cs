@@ -29,7 +29,9 @@ namespace TestNinja.UnitTests.Mocking {
 
         [Test]
         public void DownloadInstaller_DownloadFileThrowWebException_ReturnFalse() {
-            _downloader.Setup(w => w.DownloadFileToDestination("customer", null)).Throws<WebException>();
+            _downloader.Setup(d =>
+                d.DownloadFileToDestination(It.IsAny<string>(), It.IsAny<string>()))
+                .Throws<WebException>();
 
             var result = _installerHelper.DownloadInstaller("customer", "installer");
 
