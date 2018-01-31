@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestNinja.Mocking {
     public interface IBookingRepository {
-        Booking GetOverlappingBooking(Booking booking);
+        IQueryable<Booking> GetActiveBookings(int? excludedBookingId);
     }
 
     public class BookingRepository : IBookingRepository {
@@ -16,15 +16,15 @@ namespace TestNinja.Mocking {
             _unitOfWork = unitOfWork;
         }
 
-        public Booking GetOverlappingBooking(Booking booking) {
+        public IQueryable<Booking> GetActiveBookings(int? excludedBookingId) {
             var bookings = _unitOfWork.Query<Booking>()
-                    .Where(b => b.Id != booking.Id && b.Status != "Cancelled");
+                .Where(b => b.Status != "Cancelled");
 
-            return bookings.FirstOrDefault(
-                    b => booking.ArrivalDate >= b.ArrivalDate
-                        && booking.ArrivalDate < b.DepartureDate
-                        || booking.DepartureDate > b.ArrivalDate
-                        && booking.DepartureDate <= b.DepartureDate);
+            if (excludedBookingId.HasValue) {
+                bookings.Where(b => b.Id != excludedBookingId.Value);
+            }
+
+            return bookings;
         }
     }
 }
