@@ -21,7 +21,7 @@ namespace TestNinja.UnitTests.Mocking {
         public void Setup() {
             _unitOfWork = new Mock<IUnitOfWork>();
             _bookingRepository = new Mock<IBookingRepository>();
-            _unitOfWork.Object.BookingRepository = _bookingRepository.Object;
+            _unitOfWork.SetupGet(u => u.BookingRepository).Returns(_bookingRepository.Object);
             BookingHelper.UnitOfWork = _unitOfWork.Object;
             _existingBooking1 = new Booking {
                 Reference = "b",
